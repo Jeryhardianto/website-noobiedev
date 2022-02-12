@@ -1,0 +1,15 @@
+/* List Color */
+:root {
+    --base-color:#808080;
+    --white: #ffffff;
+    --secondary-color: #f2f2f2;
+}
+.base-color {
+    background-color: var(--base-color);
+}
+.secondary-color {
+    background-color: var(--secondary-color);
+}
+.no-border-radius {
+    border-radius: 0;
+}
