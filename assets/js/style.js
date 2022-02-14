@@ -1,17 +1,9 @@
-var scroll = new SmoothScroll('a[href*="#"]:not([data-easing])');
-
-
-// paralax
-if (document.getElementsByClassName('page-header')) {
-    window.onscroll = debounce(function() {
-      var scrollPosition = window.pageYOffset;
-      var bgParallax = document.querySelector('.page-header');
-      var oVal = (window.scrollY / 3);
-      bgParallax.style.transform = 'translate3d(0,' + oVal + 'px,0)';
-    }, 6);
+  var scroll = new SmoothScroll('a[href*="#"]:not([data-easing])');
+  // SmoothScroll
+  
+  if (document.querySelector('[data-easing]')) {
+    var linear = new SmoothScroll('[data-easing="linear"]', {easing: 'linear'});
   }
-
-
 //   Content
  // get the element to animate
  var element = document.getElementById('count-stats');
@@ -86,3 +78,5 @@ if (document.getElementsByClassName('page-header')) {
      loop: true
    });
  }
+
+

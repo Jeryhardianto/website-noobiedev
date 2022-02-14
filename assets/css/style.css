@@ -13,3 +13,6 @@
 .no-border-radius {
     border-radius: 0;
 }
+.mt-n13{
+    margin-top: -45rem !important;
+}
