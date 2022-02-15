@@ -3,7 +3,23 @@
     --base-color:#808080;
     --white: #ffffff;
     --secondary-color: #f2f2f2;
+    --palet-1 : #e9ecef;
+    --palet-2 : #dee2e6;
+    --palet-3 : #ced4da;
+    --palet-4 : #adb5bd;
+    --palet-5 : #6c757d;
+
 }
+.main {
+    background-color: var(--palet-3);
+}
+.content-2 {
+    background-color: var(--palet-1);
+}
+.card {
+    background-color: var(--white);
+}
+
 .base-color {
     background-color: var(--base-color);
 }
@@ -38,11 +54,30 @@
 
 .img-foto-1 {
     width: 100%;
+    margin-top: 7.5rem;
 }
 .card-foto-1 {
-    height:auto;
-    width: 100%;
     z-index: 1;
     position: relative !important;
-    margin-left: -5.5rem;
+}
+
+.img-foto-2 {
+    width: 100%;
+    margin-top: -7.5rem;
+    margin-left: -10rem;
+}
+.card-foto-2 {
+    z-index: 1;
+    position: relative !important;
+}
+
+
+.card-foto-3 .card {
+    position: relative !important;
+    margin-top: 0rem;
+}
+
+
+.custom-contact {
+    background-image: url('assets/img/bg-cover.jpg');
 }
