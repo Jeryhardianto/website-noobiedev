@@ -16,3 +16,33 @@
 .mt-n13{
     margin-top: -45rem !important;
 }
+
+.l-card {
+    position: relative !important;
+    margin-bottom: -3.5rem;
+    margin-left: 5rem;
+    width: 88%;
+}
+.l-img {
+    width: 100%;
+}
+.r-img {
+    width: 100%;
+}
+.r-card {
+    position: relative !important;
+    width: 88%;
+    margin-left: 1.5rem;
+    margin-top: -2.5rem;
+}
+
+.img-foto-1 {
+    width: 100%;
+}
+.card-foto-1 {
+    height:auto;
+    width: 100%;
+    z-index: 1;
+    position: relative !important;
+    margin-left: -5.5rem;
+}
