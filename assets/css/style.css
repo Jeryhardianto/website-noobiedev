@@ -3,6 +3,7 @@
     --base-color:#808080;
     --white: #ffffff;
     --secondary-color: #f2f2f2;
+    --palet-0 : #f3f6f8;
     --palet-1 : #e9ecef;
     --palet-2 : #dee2e6;
     --palet-3 : #ced4da;
@@ -11,7 +12,7 @@
 
 }
 .main {
-    background-color: var(--palet-3);
+    background-color: var(--palet-0);
 }
 .content-2 {
     background-color: var(--palet-1);
@@ -74,7 +75,6 @@
 
 .card-foto-3 .card {
     position: relative !important;
-    margin-top: 0rem;
 }
 
 
