@@ -17,6 +17,15 @@
 .main {
     background-color: var(--palet-0);
 }
+.main-section {
+    margin: -80px 0;
+}
+.find-text {
+    margin-top: 7.5rem !important;
+}
+.icon-find {
+    margin-bottom: -4rem;
+}
 .content-2 {
     background-color: var(--palet-1);
 }
@@ -89,12 +98,55 @@
 }
 
 .navbar.navbar-grey {
-    background-color: rgba(222, 226, 230, 0.336) !important;
+    /* background-color: rgba(222, 226, 230, 0.336) !important; */
+    background-color: #ffffff;
     box-shadow: none;
     padding-top: 25px;
-    color: #ffffff;
-    font-weight: bold;
+    /* color: #ffffff; */
+    color: black;
+    /* font-weight: bold; */
   }
   .navbar.navbar-grey .navbar-toggler .navbar-toggler-icon {
-    background-color: #dee2e6;
+    background-color: #ffffff;
   }
+
+/* Project */
+.project-body{
+    position: relative;
+    cursor: pointer;
+}
+.img-project {
+    display: block;
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+}
+.overlay-project{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(0, 0, 0, 0.5);
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+}
+
+.project-body:hover .overlay-project{
+    height: 25%;
+}
+.text-project {
+    white-space: nowrap; 
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+.text-project a{
+    color: var(--white);
+}
