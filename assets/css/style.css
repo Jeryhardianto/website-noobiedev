@@ -11,6 +11,9 @@
     --palet-5 : #6c757d;
 
 }
+.font-size-title {
+    font-size: 1.75rem;
+}
 .main {
     background-color: var(--palet-0);
 }
@@ -79,5 +82,19 @@
 
 
 .custom-contact {
-    background-image: url('assets/img/bg-cover.jpg');
+    z-index: 1;
+    margin-bottom: -30rem;
+    margin-top: 5rem;
+    margin-right: 5rem;
 }
+
+.navbar.navbar-grey {
+    background-color: rgba(222, 226, 230, 0.336) !important;
+    box-shadow: none;
+    padding-top: 25px;
+    color: #ffffff;
+    font-weight: bold;
+  }
+  .navbar.navbar-grey .navbar-toggler .navbar-toggler-icon {
+    background-color: #dee2e6;
+  }
