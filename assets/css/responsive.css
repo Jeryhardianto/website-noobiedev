@@ -1,0 +1,66 @@
+/* phone */
+@media (min-width: 320px) and (max-width: 767px){
+    .l-card {
+        position: static !important;
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 1.3rem;
+    }
+    .l-img img {
+        width: 100%;
+    }
+    .r-img img {
+        width: 100%;
+        margin-top: 2rem;
+    }
+    .r-card {
+        position: static !important;
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 1.3rem;
+        margin-top: 1rem;
+    }
+    .img-foto-1 img{
+        width: 100%;
+        margin-top: 2rem;
+    }
+    .img-foto-2{
+        width: 100%;
+        margin-top: 2.5rem;
+        margin-left: 0rem;
+    }
+    .img-foto-2 img {
+        width: 100%;
+    }
+    .bg-contact{
+        display: none;
+    }
+    .custom-contact {
+        position: static !important;
+        z-index: 1;
+        margin-bottom: 0rem;
+        margin-top: 1rem;
+        margin-right: 0rem;
+    }
+    .project-body {
+        margin-top: 1rem;
+    }
+    .text-profile p{
+        margin-top: 2rem;
+        text-align: justify;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+    .text-profile img{
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    #profile .section {
+        padding: 20px 0;
+    }
+}
+@media(hover: hover) and (pointer: fine) {
+    .project-body:hover .overlay-project{
+        height: 25%;
+    }
+}

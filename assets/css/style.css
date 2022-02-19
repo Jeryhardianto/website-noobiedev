@@ -11,6 +11,9 @@
     --palet-5 : #6c757d;
 
 }
+a {
+    color: black;
+}
 .font-size-title {
     font-size: 1.75rem;
 }
