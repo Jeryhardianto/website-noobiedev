@@ -153,3 +153,9 @@ a {
 .text-project a{
     color: var(--white);
 }
+.img-modal {
+    display: block;
+    width: 100%;
+    height: 38rem;
+    object-fit: cover;
+}

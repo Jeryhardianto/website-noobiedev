@@ -58,9 +58,18 @@
     #profile .section {
         padding: 20px 0;
     }
+    .img-modal{
+        height: 19rem;
+    }
 }
 @media(hover: hover) and (pointer: fine) {
     .project-body:hover .overlay-project{
         height: 25%;
+    }
+}
+
+@media (min-width: 992px){
+    .modal-lg{
+        max-width: 1200px;
     }
 }
