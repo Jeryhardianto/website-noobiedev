@@ -61,6 +61,20 @@
     .img-modal{
         height: 19rem;
     }
+    .wa-widget {
+        z-index: 9;
+       position: fixed;
+      right: 20px;
+      bottom: 0px;
+      background-color: var(--palet-5);
+      color: var(--white);
+      width: 10rem;
+      border-radius: 5px 5px 0px 0px;
+    }
+    .body-widget span{
+        margin: 0.3rem;
+        font-size: 15pt;
+    }
 }
 @media(hover: hover) and (pointer: fine) {
     .project-body:hover .overlay-project{
