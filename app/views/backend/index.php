@@ -30,7 +30,7 @@
                                 </div>
                                 <div class="row">
                                     <div class="col-sm-12">
-                                        <h1>Hallo, <b>Admin</b> Selamat datang </h1>
+                                        <h1>Hallo, <b><?= Session::get('username'); ?></b> Selamat datang </h1>
                                     </div>
                                 </div>
 

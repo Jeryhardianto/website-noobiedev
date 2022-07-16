@@ -20,13 +20,22 @@ NOOBIE DEV
     <!-- custom cscs -->
     <link rel="stylesheet" href="<?= BASEURL ?>/assets/frontend/css/style.css">
     <link rel="stylesheet" href="<?= BASEURL ?>/assets/frontend/css/responsive.css">
+     <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <!-- Link Swiper's JS Files -->
+    <link rel="stylesheet" href="<?= BASEURL ?>/assets/frontend/css/cs.css">
+     <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </head>
 
 <body class="landing-page sidebar-collapse">
     <nav class="navbar navbar-grey navbar-color-on-scroll fixed-top navbar-expand-lg" color-on-scroll="100" id="sectionsNav">
         <div class="container">
             <div class="navbar-translate">
-                <a class="navbar-brand" href="index.html">
+                <a class="navbar-brand" href="<?= BASEURL?>">
           NOOBIE DEV </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="sr-only">Toggle navigation</span>
@@ -38,22 +47,22 @@ NOOBIE DEV
             <div class="collapse navbar-collapse">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item mx-2">
-                        <a href="#home" class="nav-link data" data-easing="linear">
+                        <a href="<?= BASEURL?>" class="nav-link data" data-easing="linear">
                Home
             </a>
                     </li>
                     <li class="nav-item mx-2">
-                        <a href="profile.html" class="nav-link">
+                        <a href="<?= BASEURL?>/_profile" class="nav-link">
                Profile
             </a>
                     </li>
                     <li class="nav-item mx-2">
-                        <a href="daftar-rumah.html" class="nav-link">
+                        <a href="<?= BASEURL?>/_project" class="nav-link">
                Project
             </a>
                     </li>
                     <li class="nav-item mx-2">
-                        <a href="#contact" class="nav-link" data-easing="linear">
+                        <a href="<?= BASEURL ?>/#contact" class="nav-link" data-easing="linear">
                Contact
             </a>
                     </li>

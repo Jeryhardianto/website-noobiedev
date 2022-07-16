@@ -1,6 +1,14 @@
 <?php 
 
 class home extends Controller {
+
+    public function __construct() {
+       if (Session::get('id') != 1 && Session::get('status') != 'logged') {
+            Redirect::to('/login');
+        }
+    }
+
+
     public function index()
     {
         $data['title'] = 'Home | '.PROJECT;

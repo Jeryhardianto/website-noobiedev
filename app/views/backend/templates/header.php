@@ -20,6 +20,7 @@
     <link href="<?= BASEURL ?>/assets/backend/css/datepicker.css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.css">
     <link rel="stylesheet" href="<?= BASEURL ?>/dist/css/custom.css">
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -49,7 +50,7 @@
             <nav class="navbar top-navbar navbar-expand-md navbar-dark">
                 <div class="navbar-header" data-logobg="skin5">
                     <!-- This is for the sidebar toggle which is visible on mobile only -->
-                    <a class="nav-toggler waves-effect waves-light d-block d-md-none" href="javascript:void(0)"><i
+                    <a class="nav-toggler waves-effect waves-light d-block d-md-none" href="#"><i
                                 class="ti-menu ti-close"></i></a>
                     <!-- ============================================================== -->
                     <!-- Logo -->
@@ -141,7 +142,7 @@
                         <!-- User profile and search -->
                         <!-- ============================================================== -->
                         <li class="nav-item dropdown">
-                            <span style="font-weight: bold; color: #fff">Hi Welcome Back, Admin</span>
+                            <span style="font-weight: bold; color: #fff">Hi, Admin</span>
                             <a class="
                     nav-link
                     dropdown-toggle
@@ -152,9 +153,9 @@
                                         src="<?= BASEURL ?>/assets/backend/images/user.png" alt="user" class="rounded-circle"
                                         width="31" /></a>
                             <div class="dropdown-menu dropdown-menu-right user-dd animated">
-                                <a class="dropdown-item" href="javascript:void(0)"><i class="ti-user m-r-5 m-l-5"></i> My
+                                <a class="dropdown-item" href="userprofile"><i class="ti-user m-r-5 m-l-5"></i> My
                                     Profile</a>
-                                <a class="dropdown-item" href="<?= BASEURL ?>auth/logout"><i
+                                <a class="dropdown-item" href="<?= BASEURL ?>/logout"><i
                                             class="fa fa-power-off m-r-5 m-l-5"></i> Logout</a>
                             </div>
                         </li>

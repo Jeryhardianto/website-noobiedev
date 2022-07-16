@@ -25,124 +25,61 @@
                 <div class="col-md-11 col-12 ml-auto mr-auto">
                     <!-- conten 1 -->
                     <div class="row my-4">
-                        <div class="col-md-6 col-12">
-                            <div class="card no-border-radius l-card">
-                                <div class="card-body">
-                                    <h6 class="title">MC HOUSE</h6>
-                                    <hr>
-                                    <p>
-                                        MC House is one of the rendering projects we're working on. This house was designed by a young Thai architect, he trusts us to do the rendering of this MC HOUSE project.
-                                    </p>
-                                    <span class="material-icons">
-                      trending_flat
-                    </span>
+                        <?php 
+                        $pr = count(@$data['projects']);
+                        for ($i=0; $i < $pr; $i++) {
+                            $namaProject    = @$data['projects'][$i]['nama_project'];
+                            $gambar         = @$data['projects'][$i]['gambar'];
+                            $deskripsi      = @$data['projects'][$i]['deskripsi'];
+                            $deskripsi      = substr($deskripsi, 0, 150);
+                            if ($i % 2 == 0) {
+                                echo '<div class="col-md-6 col-12">
+                                <div class="r-img">
+                                    <img src="'. BASEURL.' /assets/upload/'.$gambar.'"  alt="" srcset="">
                                 </div>
-                            </div>
-                            <div class="l-img">
-                                <img src="<?= BASEURL ?>/assets/frontend/img/foto/foto-1.jpg" alt="">
-                            </div>
-                        </div>
-                        <!-- right content -->
-                        <div class="col-md-6 col-12">
-                            <div class="r-img">
-                                <img src="<?= BASEURL ?>/assets/frontend/img/foto/foto-1.jpg" alt="" srcset="">
-                            </div>
-                            <div class="card no-border-radius r-card">
-                                <div class="card-body">
-                                    <h6 class="title">MC HOUSE</h6>
-                                    <hr>
-                                    <p>
-                                        MC House is one of the rendering projects we're working on. This house was designed by a young Thai architect, he trusts us to do the rendering of this MC HOUSE project.
-                                    </p>
-                                    <span class="material-icons">
-                      trending_flat
-                    </span>
+                                <div class="card no-border-radius r-card">
+                                    <div class="card-body">
+                                        <h6 class="title">'.$namaProject.'</h6>
+                                        <hr>
+                                        <p>
+                                            '.$deskripsi.'
+                                        </p>
+                                        <a href="'.BASEURL.'/_project/_detail_project/'.$data['projects'][$i]['id'].'" > 
+                                        <span class="material-icons">
+                                            trending_flat
+                                        </span>
+                                        </a>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
+                            </div>';
+                            }else {
+                                echo ' <div class="col-md-6 col-12">
+                                <div class="card no-border-radius l-card">
+                                    <div class="card-body">
+                                        <h6 class="title">'.$namaProject.'E</h6>
+                                        <hr>
+                                        <p>
+                                             '.$deskripsi.'
+                                        </p>
+                                        <a href="'.BASEURL.'/_project/_detail_project/'.$data['projects'][$i]['id'].'" > 
+                                        <span class="material-icons">
+                                            trending_flat
+                                        </span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="l-img">
+                                    <img src="'. BASEURL.' /assets/upload/'.$gambar.'"   alt="">
+                                </div>
+                            </div>';
+                            }
+                        }
+
+                        ?>
+                      
                     </div>
                     <!-- end content -->
 
-                    <!-- content 2 -->
-                    <div class="row my-4">
-                        <div class="col-md-6 col-12">
-                            <div class="card no-border-radius l-card">
-                                <div class="card-body">
-                                    <h6 class="title">MC HOUSE</h6>
-                                    <hr>
-                                    <p>
-                                        MC House is one of the rendering projects we're working on. This house was designed by a young Thai architect, he trusts us to do the rendering of this MC HOUSE project.
-                                    </p>
-                                    <span class="material-icons">
-                      trending_flat
-                    </span>
-                                </div>
-                            </div>
-                            <div class="l-img">
-                                <img src="<?= BASEURL ?>/assets/frontend/img/foto/foto-1.jpg" alt="">
-                            </div>
-                        </div>
-                        <!-- right content -->
-                        <div class="col-md-6 col-12">
-                            <div class="r-img">
-                                <img src="<?= BASEURL ?>/assets/frontend/img/foto/foto-1.jpg" alt="" srcset="">
-                            </div>
-                            <div class="card no-border-radius r-card">
-                                <div class="card-body">
-                                    <h6 class="title">MC HOUSE</h6>
-                                    <hr>
-                                    <p>
-                                        MC House is one of the rendering projects we're working on. This house was designed by a young Thai architect, he trusts us to do the rendering of this MC HOUSE project.
-                                    </p>
-                                    <span class="material-icons">
-                      trending_flat
-                    </span>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- end content -->
-                    </div>
-                    <!-- end konten -->
-
-                    <!-- content 3 -->
-                    <div class="row my-4">
-                        <div class="col-md-6 col-12">
-                            <div class="card no-border-radius l-card">
-                                <div class="card-body">
-                                    <h6 class="title">MC HOUSE</h6>
-                                    <hr>
-                                    <p>
-                                        MC House is one of the rendering projects we're working on. This house was designed by a young Thai architect, he trusts us to do the rendering of this MC HOUSE project.
-                                    </p>
-                                    <span class="material-icons">
-                    trending_flat
-                  </span>
-                                </div>
-                            </div>
-                            <div class="l-img">
-                                <img src="<?= BASEURL ?>/assets/frontend/img/foto/foto-1.jpg" alt="">
-                            </div>
-                        </div>
-                        <!-- right content -->
-                        <div class="col-md-6 col-12">
-                            <div class="r-img">
-                                <img src="<?= BASEURL ?>/assets/frontend/img/foto/foto-1.jpg" alt="" srcset="">
-                            </div>
-                            <div class="card no-border-radius r-card">
-                                <div class="card-body">
-                                    <h6 class="title">MC HOUSE</h6>
-                                    <hr>
-                                    <p>
-                                        MC House is one of the rendering projects we're working on. This house was designed by a young Thai architect, he trusts us to do the rendering of this MC HOUSE project.
-                                    </p>
-                                    <span class="material-icons">
-                    trending_flat
-                  </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- end content -->
                 </div>
             </div>
         </div>
@@ -163,35 +100,52 @@
                             <div class="card card-raised card-carousel">
                                 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="3000">
                                     <ol class="carousel-indicators">
-                                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                        <!-- <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li> -->
+                                        <?php
+                                                $slidetom = 0;
+                                            foreach ($data['video'] as $dp) :
+                                            ?>
+                                                    <li data-target="#carouselExampleIndicators" data-slide-to="<?= $slidetom++ ?>"></li>
+                                        <?php 
+                                            endforeach;
+                                        ?>
                                     </ol>
                                     <div class="carousel-inner">
+                                    <?php 
+                                        $cekmin = [];
+                                        $dp = [];                        
+                                        for($i=0; $i < count($data['video']); $i++){
+                                                $cekmin[] = $data['video'][$i]['id'];
+                                                $dp[] = $data['video'][$i];
+                                        }
+                                        $ck = min($cekmin);
+                                        for($i = 0; $i < count($dp); $i++){
+                                            if($ck){
+                                    ?>
                                         <div class="carousel-item active">
-                                            <iframe class="d-block w-100" width="1080" height="600" src="https://www.youtube.com/embed/ADjLsHpfKYI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                            <iframe class="d-block w-100" width="1080" height="600" src="<?= $dp[$i]['url'] ?>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                             <div class="carousel-caption d-none d-md-block">
                                                 <h4>
-                                                    <i class="material-icons">location_on</i> Yellowstone National Park, United States
+                                                    <i class="material-icons">location_on</i><?= $dp[$i]['lokasi'] ?>
                                                 </h4>
                                             </div>
                                         </div>
+                                        <?php 
+                                            }else{
+                                        ?>
                                         <div class="carousel-item">
-                                            <iframe class="d-block w-100" width="1080" height="600" src="https://www.youtube.com/embed/bdE_SyHad90" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                            <iframe class="d-block w-100" width="1080" height="600" src="<?= $dp[$i]['url'] ?>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                             <div class="carousel-caption d-none d-md-block">
                                                 <h4>
-                                                    <i class="material-icons">location_on</i> Somewhere Beyond, United States
+                                                    <i class="material-icons">location_on</i> <?= $dp[$i]['lokasi'] ?>
                                                 </h4>
                                             </div>
                                         </div>
-                                        <div class="carousel-item">
-                                            <iframe class="d-block w-100" width="1080" height="600" src="https://www.youtube.com/embed/UOxkGD8qRB4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                            <div class="carousel-caption d-none d-md-block">
-                                                <h4>
-                                                    <i class="material-icons">location_on</i> Yellowstone National Park, United States
-                                                </h4>
-                                            </div>
-                                        </div>
+                                      <?php 
+                                            }
+                                            $ck =0;
+                                       }
+                                      ?>
                                     </div>
                                     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                                         <i class="material-icons">keyboard_arrow_left</i>
@@ -217,26 +171,32 @@
                     <h2 class="text-center title font-size-title">Stay In Touch.</h2>
                     <div class="row">
                         <div class="col-md-12">
+                            <?php 
+                            foreach ($data['contact'] as $ct) {
+                                $alamat = $ct['alamat'];
+                                $email = $ct['email'];
+                                $no_telp = $ct['telp'];
+                            }
+                            
+                            ?>
                             <div class="col-md-4 float-right custom-contact">
                                 <div class="card">
                                     <div class="card-body">
                                         <img src="<?= BASEURL ?>/assets/frontend/img/foto/logo-h-scale-down.png" width="70%" alt="">
                                         <hr>
                                         <div>
-                                            <a href="">
+                                            <a href="#">
                                                 <p>
-                                                    Jln. Kawung III / no. 17
-                                                    <br> kel. Tlogosari Kulon
-                                                    <br> Kota Semarang.
+                                                    <?= $alamat ?>
                                                 </p>
                                             </a>
-                                            <a href="">
-                                                studionoobie@gmail.com
+                                            <a href="#">
+                                                <?= $email ?>
                                             </a>
                                             <br>
                                             <br>
-                                            <a href="">
-                                                Tel: +62 813 402 024 83
+                                            <a href="#">
+                                                Tel: <?= $no_telp ?>
                                             </a>
                                         </div>
                                         <br>

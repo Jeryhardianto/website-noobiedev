@@ -25,6 +25,17 @@
 <script src="<?= BASEURL ?>/assets/frontend/js/smooth-scroll.js"></script>
 <script src="<?= BASEURL ?>/assets/frontend/js/smooth-scroll.polyfills.js"></script>
 <script src="<?= BASEURL ?>/assets/frontend/js/style2.js"></script>
+<script>
+    $(document).on('click', '#myModal', function() {
+        var namaDP = $(this).data('nama');
+        var foto = $(this).data('foto');
+
+        $('#namaDP').text(namaDP);
+        $('#foto').attr('src', '<?= BASEURL?>/assets/upload/' + foto);
+
+    });
+</script>
+   
 </body>
 
 </html>
